@@ -1,6 +1,8 @@
 # Front-end
 
-This template should help get you started developing with Vue 3 in Vite.
+Clinic Management System
+
+Welcome to our Clinic Management System, a comprehensive solution designed to streamline the operations of a clinic. This application allows users to explore the various specialties our clinic offers, book appointments, and provides administrative functionalities for managing doctors and nurses.
 
 ## Recommended IDE Setup
 
