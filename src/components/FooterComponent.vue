@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-info">
-        <h2>CLINIC core</h2>
+        <h2>CLINIC-core</h2>
         <p>Rabat, hassan 02<br />+21267889999</p>
       </div>
       <div class="footer-links">

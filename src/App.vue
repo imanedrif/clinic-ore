@@ -1,29 +1,15 @@
 <template>
   <div id="app">
-    <HeaderComponent />
-    <HeroSection />
-    <SpecialitiesSection />
-    <TeamSection />
-    <FooterComponent />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HeaderComponent from "./components/HeaderComponent.vue";
-import HeroSection from "./components/HeroSection.vue";
-import SpecialitiesSection from "./components/SpecialitiesSection.vue";
-import TeamSection from "./components/TeamSection.vue";
-import FooterComponent from "./components/FooterComponent.vue";
+
 
 export default {
-  name: "App",
-  components: {
-    HeaderComponent,
-    HeroSection,
-    SpecialitiesSection,
-    TeamSection,
-    FooterComponent,
-  },
+  name: 'App',
+  
 };
 </script>
 
@@ -38,5 +24,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+header-component {
+  flex-shrink: 0;
+}
+
+footer-component {
+  flex-shrink: 0;
+}
+
+router-view {
+  flex-grow: 1;
 }
 </style>

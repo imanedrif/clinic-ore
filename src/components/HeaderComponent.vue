@@ -7,7 +7,7 @@
           <li><a href="#">Équipe</a></li>
         </ul>
       </nav>
-      <h1>CLINIC core</h1>
+      <h1>CLINIC-core</h1>
       <div class="contact-info">
         <span>TEL : +21268889900</span>
       </div>

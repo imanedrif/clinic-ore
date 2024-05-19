@@ -53,11 +53,28 @@ export default {
     };
   },
   methods: {
-    submitForm() {
-      console.log("Form Data:", this.formData);
-      // Add form submission logic here
-    },
-  },
+    async submitForm() {
+      try {
+        const response = await fetch('http://localhost:8080/api/endpoint', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(this.formData)
+        });
+
+        if (!response.ok) {
+          const message = `An error has occurred: ${response.status}`;
+          throw new Error(message);
+        }
+
+        const data = await response.json();
+        console.log('Form submitted successfully:', data);
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
+    }
+  }
 };
 </script>
 
@@ -84,7 +101,6 @@ export default {
 /* Responsive styles */
 form {
   max-width: 700px;
-  max-height: 4;
   transform: translateY(150px);
   margin: 0 auto;
   border: 1px solid #dee2e6;
